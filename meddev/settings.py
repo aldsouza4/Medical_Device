@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
     'home',
 ]
 
@@ -81,12 +83,21 @@ WSGI_APPLICATION = 'meddev.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DYNO' in os.environ:
+    # if running on server
+    DATABASE_URL = 'postgres://faijckcnjednlx:c9a2a87fe62ae880aec3261919c830644af256573564aabd80819e8c483b11cf@ec2-54' \
+                   '-210-226-209.compute-1.amazonaws.com:5432/dfdgsjhch4q247'
+    DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
+
+else:
+    DEBUG = True
+    # if not running on server
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
 
 
 # Password validation
