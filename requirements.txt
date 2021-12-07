@@ -71,6 +71,3 @@ whitenoise==5.2.0
 wincertstore==0.2
 wrapt==1.12.1
 zope.interface==5.4.0
-django-braces
-APScheduler==3.0.0
-django-crontab==0.7.1
