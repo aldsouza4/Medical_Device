@@ -5,7 +5,7 @@ from django.views.generic import TemplateView
 # Create your views here.
 
 # class index_view(TemplateView):
-#     template_name = 'index.html'
+#     template_name = 'base.html'
 
 def index_view(request):
     if request.method == 'POST':
@@ -15,5 +15,14 @@ def index_view(request):
 
         print(name, email, message)
 
-
     return render(request, 'index.html')
+
+
+def solution_view(request):
+    return render(request, 'solutions.html')
+
+
+def customer_view(request):
+    return render(request, 'customer.html')
+
+
