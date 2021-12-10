@@ -10,7 +10,7 @@
     <meta name="author" content="Template Mo">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
-    <title>Art Factory HTML CSS Template</title>
+    <title>Aion</title>
 <!--
 
 ART FACTORY
@@ -37,15 +37,17 @@ https://templatemo.com/tm-537-art-factory
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="#" class="logo">Art Factory</a>
+                        <a href="{% url 'home:index' %}" class="logo">AION</a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#welcome" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about">About</a></li>
-                            <li class="scroll-to-section"><a href="#services">Services</a></li>
-                            <li class="scroll-to-section"><a href="#frequently-question">Frequently Questions</a></li>
-                            <li class="submenu">
+                            <li class="scroll-to-section"><a href="{% url 'home:solution' %}">Solution</a></li>
+                            <li class="scroll-to-section"><a href="{% url 'home:technology' %}">Technology</a></li>
+                            <li class="scroll-to-section"><a href="{% url 'home:customers' %}">Customers</a></li>
+                            <li class="scroll-to-section"><a href="{% url 'home:company' %}">Company</a></li>
+                            <li class="scroll-to-section"><a href="{% url 'home:login' %}">Login</a></li>
+
+                            <!-- <li class="submenu">
                                 <a href="javascript:;">Drop Down</a>
                                 <ul>
                                     <li><a href="">About Us</a></li>
@@ -53,8 +55,7 @@ https://templatemo.com/tm-537-art-factory
                                     <li><a href="">FAQ's</a></li>
                                     <li><a href="">Blog</a></li>
                                 </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li>
+                            </li> -->
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -66,6 +67,17 @@ https://templatemo.com/tm-537-art-factory
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
+
+    <!--    ***** Preloader Start ***** -->
+        <div id="preloader">
+            <div class="jumper">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    <!--     ***** Preloader End ***** -->
+    <br><br><br><br>
     {% block content %}
 
 
@@ -75,77 +87,10 @@ https://templatemo.com/tm-537-art-factory
     <br><br>
     <footer style="background-color: grey;" >
         <div class="container" >
-
-          <div class="row">
-
-            <div class="col-lg-4 col-sm-4 col-xs-4">
-              <div class="row">
-                <div class="foot">
-                  <div class="col-lg-6 col-sm-12 col-xs-12">
-                    <h5>Home</h5>
-                    <p>home</p>
-                    <p>home</p>
-                    <p>home</p>
-                  </div>
-                </div>
-
-              <div class="foot">
-                <div class="col-lg-6 col-sm-12 col-xs-12">
-                  <h5>Solution</h5>
-                  <p>Solution</p>
-                  <p>Solution</p>
-                  <p>Solution</p>
-                </div>
-              </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-4 col-xs-4">
-              <div class="row">
-                <div class="foot">
-                  <div class="col-lg-6 col-sm-12 col-xs-12">
-                    <h5>Technology</h5>
-                    <p>Technology</p>
-                    <p>Technology</p>
-                    <p>Technology</p>
-                  </div>
-                </div>
-
-                <div class="foot">
-                  <div class="col-lg-6 col-sm-12 col-xs-12">
-                    <h5>Customers</h5>
-                    <p>Customers</p>
-                    <p>Customers</p>
-                    <p>Customers</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-4 col-xs-4">
-              <div class="row">
-                <div class="foot">
-                  <div class="col-lg-6 col-sm-12 col-xs-12">
-                    <h5>Company</h5>
-                    <p>Company</p>
-                    <p>Company</p>
-                    <p>Company</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-          <br><br>
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12">
-                    <!-- <p class="copyright">Copyright &copy; 2020 Art Factory Company
-
-                . Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p> -->
+                    <p class="copyright">Copyright &copy; 2020 Art Factory Company
+                . Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
                 </div>
                 <div class="col-lg-5 col-md-12 col-sm-12">
                     <ul class="social">

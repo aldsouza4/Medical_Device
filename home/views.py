@@ -22,7 +22,18 @@ def solution_view(request):
     return render(request, 'solutions.html')
 
 
+def technology_view(request):
+    return render(request, 'technology.html')
+
+
 def customer_view(request):
     return render(request, 'customer.html')
 
+
+def company_view(request):
+    return render(request, 'company.html')
+
+
+def login_view(request):
+    return render(request, 'login.html')
 

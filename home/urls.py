@@ -22,9 +22,11 @@ app_name = 'home'
 urlpatterns = [
     path('', views.index_view, name='index'),
     path('solution/', views.solution_view, name='solution'),
+    path('technology/', views.technology_view, name='technology'),
     path('customers/', views.customer_view, name='customers'),
-    # path('solution/', views., name='solution'),
-    # path('solution/', views., name='solution'),
+    path('company/', views.company_view, name='company'),
+    path('login/', views.login_view, name='login'),
+
     # path('solution/', views., name='solution'),
 
 ]

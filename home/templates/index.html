@@ -1,15 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<!--    ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-<!--     ***** Preloader End ***** -->
 
  <!-- ***** Welcome Area Start ***** -->
     <div class="welcome-area" id="welcome">
@@ -19,9 +10,11 @@
             <div class="container">
                 <div class="row">
                     <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <h1>Art Factory is free <strong>for YOU</strong></h1>
-                        <p>This template is available for 100% free of charge on TemplateMo. Download, modify and use this for your business website.</p>
-                        <a href="#about" class="main-button-slider">Find Out More</a>
+                        <h1>Name Name Name<strong>Name</strong></h1>
+                        <p>Text Text text</p>
+                        <a href="#about" class="main-button-slider">Rquest Demo</a>
+                        <a href="#about" class="main-button-slider">Watch Video</a>
+
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
                         <!-- <img src="static/images/slider-icon.png" class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic"> -->
@@ -35,67 +28,161 @@
     </div>
     <!-- ***** Welcome Area End ***** -->
 
-    <center>
-    <h3>Here comes the video demo</h3>
-    <iframe width="520" height="315" src="https://www.youtube.com/embed/OC1Xaay32lk?autoplay=1"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-    </iframe>
-    </center>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+          <section class="section" id="frequently-question">
+              <div class="container" style="padding-left:100px">
+                  <!-- ***** Section Title Start ***** -->
+                  <div class="section-heading">
+                      <h2>Gist of Data/ML Solution</h2>
+                  </div>
+                  <!-- ***** Section Title End ***** -->
 
-    <br><br><br>
-    <!-- ***** Contact Us Start ***** -->
-    <section class="section" id="contact-us">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- ***** Contact Map Start ***** -->
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div id="map">
-                      <!-- How to change your own map point
-                           1. Go to Google Maps
-                           2. Click on your location point
-                           3. Click "Share" and choose "Embed map" tab
-                           4. Copy only URL and paste it within the src="" field below
-                    -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <!-- ***** Contact Map End ***** -->
-
-                <!-- ***** Contact Form Start ***** -->
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="contact-form">
-                        <form id="contact" action="" method="post">
-                        {% csrf_token %}
-                          <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="name" type="text" id="name" placeholder="Full Name" required="" class="contact-field">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="email" type="text" id="email" placeholder="E-mail" required="" class="contact-field">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <textarea name="message" rows="6" id="message" placeholder="Your Message" required="" class="contact-field"></textarea>
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="main-button">Send It</button>
-                              </fieldset>
-                            </div>
+                  <div class="accordions is-first-expanded">
+                      <article class="accordion">
+                          <div class="accordion-head">
+                              <span>Technology-1</span>
+                              <span class="icon">
+                                  <i class="icon fa fa-chevron-right"></i>
+                              </span>
                           </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- ***** Contact Form End ***** -->
-            </div>
-        </div>
-    </section>
-    <!-- ***** Contact Us End ***** -->
+                          <div class="accordion-body">
+                              <div class="content">
+                                  <p>Duis vulputate porttitor urna sit amet pretium. Phasellus sed pulvinar eros, condimentum consequat ex. Suspendisse potenti.
+                                  <br>
+                                  Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat.</p>
+                                  <br>
+                                  <a href="{% url 'home:technology' %}#tech-1" class="main-button-slider">Find Out More</a>
+                              </div>
+                          </div>
+                      </article>
+                      <article class="accordion">
+                          <div class="accordion-head">
+                              <span>Technology-2</span>
+                              <span class="icon">
+                                  <i class="icon fa fa-chevron-right"></i>
+                              </span>
+                          </div>
+                          <div class="accordion-body">
+                              <div class="content">
+                                  <p>Sed odio elit, cursus sed consequat at, rutrum eget augue. Cras ac eros iaculis, tempor quam sit amet, scelerisque mi. Quisque eu risus eget nunc porttitor vestibulum at a ante.
+                                  <br><br>
+                                  Praesent ut placerat turpis, vel pellentesque dolor. Sed rutrum eleifend tortor, eu luctus orci sagittis in. In blandit fringilla mollis.</p>
+                                  <br>
+                                  <a href="{% url 'home:technology' %}#tech-2" class="main-button-slider">Find Out More</a>
+                              </div>
+                          </div>
+                      </article>
+                      <article class="accordion">
+                          <div class="accordion-head">
+                              <span>TTechnology-3</span>
+                              <span class="icon">
+                                  <i class="icon fa fa-chevron-right"></i>
+                              </span>
+                          </div>
+                          <div class="accordion-body">
+                              <div class="content">
+                                  <p>Proin feugiat ante ut vulputate rutrum. Nam quis erat turpis. Nullam maximus pharetra lorem, eu condimentum est iaculis ut. Pellentesque mattis ultrices dignissim.
+                                  <br>
+                                  Etiam et enim finibus, feugiat massa efficitur, finibus sapien. Sed cursus lacus quis arcu scelerisque, eget ornare risus maximus. Aenean non lectus id odio rhoncus pharetra.</p>
+                                  <br>
+                                  <a href="#about" class="main-button-slider">Find Out More</a>
+                              </div>
+                          </div>
+                      </article>
+                  </div>
+                  <br>
+                  <div class="text-right">
+                  <a href="{% url 'home:technology' %}" class="main-button-slider">Learn More</a>
+                  </div>
+              </div>
+          </section>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <center>
+        <img src="{% static 'images/slider-icon.png' %}" class="rounded img-fluid d-block mx-auto" alt="My image">
+        </center>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <center>
+        <h3>Here comes the video demo</h3>
+        <iframe width="520" height="315" src="https://www.youtube.com/embed/OC1Xaay32lk?autoplay=1"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+        </center>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <center>
+        <h3>Here comes the video demo</h3>
+        <iframe width="520" height="315" src="https://www.youtube.com/embed/OC1Xaay32lk"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+        </center>
+      </div>
+    </div>
+
+    <br><br>
+
+<!--    <br>-->
+<!--    &lt;!&ndash; ***** Contact Us Start ***** &ndash;&gt;-->
+<!--    <section class="section" id="contact-us">-->
+<!--        <div class="container-fluid">-->
+<!--            <div class="row">-->
+<!--                &lt;!&ndash; ***** Contact Map Start ***** &ndash;&gt;-->
+<!--                <div class="col-lg-6 col-md-6 col-sm-12">-->
+<!--                    <div id="map">-->
+<!--                      &lt;!&ndash; How to change your own map point-->
+<!--                           1. Go to Google Maps-->
+<!--                           2. Click on your location point-->
+<!--                           3. Click "Share" and choose "Embed map" tab-->
+<!--                           4. Copy only URL and paste it within the src="" field below-->
+<!--                    &ndash;&gt;-->
+<!--                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; ***** Contact Map End ***** &ndash;&gt;-->
+
+<!--                &lt;!&ndash; ***** Contact Form Start ***** &ndash;&gt;-->
+<!--                <div class="col-lg-6 col-md-6 col-sm-12">-->
+<!--                    <div class="contact-form">-->
+<!--                        <form id="contact" action="" method="post">-->
+<!--                        {% csrf_token %}-->
+<!--                          <div class="row">-->
+<!--                            <div class="col-md-6 col-sm-12">-->
+<!--                              <fieldset>-->
+<!--                                <input name="name" type="text" id="name" placeholder="Full Name" required="" class="contact-field">-->
+<!--                              </fieldset>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-6 col-sm-12">-->
+<!--                              <fieldset>-->
+<!--                                <input name="email" type="text" id="email" placeholder="E-mail" required="" class="contact-field">-->
+<!--                              </fieldset>-->
+<!--                            </div>-->
+<!--                            <div class="col-lg-12">-->
+<!--                              <fieldset>-->
+<!--                                <textarea name="message" rows="6" id="message" placeholder="Your Message" required="" class="contact-field"></textarea>-->
+<!--                              </fieldset>-->
+<!--                            </div>-->
+<!--                            <div class="col-lg-12">-->
+<!--                              <fieldset>-->
+<!--                                <button type="submit" id="form-submit" class="main-button">Send It</button>-->
+<!--                              </fieldset>-->
+<!--                            </div>-->
+<!--                          </div>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; ***** Contact Form End ***** &ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    &lt;!&ndash; ***** Contact Us End ***** &ndash;&gt;-->
 
 
 {% endblock %}

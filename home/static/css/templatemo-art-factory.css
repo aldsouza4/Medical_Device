@@ -844,7 +844,7 @@ about
 */
 
 #about {
-  padding: 120px 0px;
+  padding: 70px 0px;
   border-bottom: 1px solid #eee;
 }
 
@@ -863,7 +863,7 @@ about
 }
 
 #about2 {
-  padding: 120px 0px;
+  padding: 70px 0px;
 }
 
 #about2 .right-image {
@@ -1460,7 +1460,21 @@ preloader
 
 /*My Design*/
 
-.foot{
-  /* padding: 5px; */
-  background-color: black;
+.head-image-1 {
+  background-image: url("/static/images/left-image.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.head-image-2 {
+  background-image: url("/static/images/left-image.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.main-header{
+  padding-top: 500px;
+  margin-left: 60px;
 }
